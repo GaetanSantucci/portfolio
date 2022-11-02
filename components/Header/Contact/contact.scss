@@ -1,0 +1,53 @@
+@use '/public/styles/vars';
+
+.navigation {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.email {
+  color: vars.$flashColor;
+  margin-left: 50px;
+}
+
+.email::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: vars.$flashColor;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin: 0.4rem;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+.social {
+  margin-right: 45px;
+}
+
+.social::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: vars.$flashColor;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}

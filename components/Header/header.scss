@@ -1,0 +1,20 @@
+@use '/public/styles/vars';
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: vars.$border-colored;
+
+  &_letter {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 8rem;
+    color: vars.$flashColor;
+
+    & > h2 {
+      margin: 2rem;
+    }
+  }
+}

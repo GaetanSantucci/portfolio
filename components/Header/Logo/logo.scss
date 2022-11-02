@@ -1,0 +1,58 @@
+@use '/public/styles/vars';
+
+svg {
+  margin: 3rem;
+  width: 30%;
+}
+
+.cls-1 {
+  fill: vars.$primaryMedium;
+  stroke-width: 1;
+  stroke: vars.$primaryLight;
+  stroke-dasharray: 550;
+  stroke-dashoffset: 550;
+  animation: neon 3s linear;
+}
+
+@keyframes neon {
+  0% {
+    fill: transparent;
+  }
+  10% {
+    fill: vars.$primaryLight;
+  }
+  10.2% {
+    fill: rgba(0, 0, 0, 0.658);
+  }
+  10.3% {
+    fill: transparent;
+  }
+  18% {
+    fill: vars.$primaryLight;
+  }
+  18.1% {
+    fill: rgba(0, 0, 0, 0.658);
+  }
+  18.2% {
+    fill: transparent;
+  }
+  60% {
+    fill: vars.$primaryLight;
+  }
+  60.1% {
+    fill: rgba(0, 0, 0, 0.658);
+  }
+  60.2% {
+    fill: transparent;
+  }
+  63.1% {
+    fill: rgba(0, 0, 0, 0.58);
+  }
+  63.2% {
+    fill: #00131cc2;
+  }
+
+  100% {
+    fill: vars.$primaryLight;
+  }
+}
