@@ -1,11 +1,31 @@
 @use 'vars.scss';
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/public/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat italic';
+  src: url('/public/fonts/Montserrat-Italic-VariableFont_wght.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Thunder';
+  src: url('/public/fonts/Thunder-VF.ttf') format('truetype');
+}
+
+:root {
+  --fontTitle: 'Thunder';
+  --fontText: 'Montserrat';
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--fontText) sans-serif;
 }
 
 a {

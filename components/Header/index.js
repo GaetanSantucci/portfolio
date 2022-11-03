@@ -1,3 +1,5 @@
+'use client';
+
 import Contact from './Contact'
 import Logo from './Logo';
 import './header.scss'
@@ -10,12 +12,18 @@ export default function Header() {
 
   useEffect(() => {
 
-    // Target the two specific elements we have asigned the animate class
-    gsap.to(".animated-letter", {
-      x: 100,
-      repeat: -1,
-      repeatDelay: 1,
-      yoyo: true
+    gsap.fromTo(".animated-letter", {
+      x: "random(-900,900)",
+      y: "random(-900,20)",
+      color: '#012532'
+    }, {
+      // ease: "slow(0.7, 0.7, false)",
+      x: 0,
+      y: 0,
+      autoAlpha: 1,
+      duration: 2,
+      rotateX: 360,
+      color: '#fe800c'
     });
   }, []);// <- Scope!
 

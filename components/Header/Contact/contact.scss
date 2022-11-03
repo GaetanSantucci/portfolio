@@ -2,16 +2,14 @@
 
 .navigation {
   width: 100%;
-  position: relative;
+  position: fixed;
+  top: 2%;
+  left: 0;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 0;
-}
-
-.email {
-  color: vars.$flashColor;
-  margin-left: 50px;
+  margin-bottom: 2rem;
 }
 
 .email::before {
@@ -23,6 +21,11 @@
   left: 0;
   top: 50%;
   position: absolute;
+}
+.email {
+  color: vars.$flashColor;
+  margin-left: 50px;
+  transition: all 0.4s;
 }
 
 .icon {
