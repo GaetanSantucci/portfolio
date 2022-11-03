@@ -1,0 +1,67 @@
+@use '/public/styles/vars';
+
+.hexa-light {
+  fill: vars.$primaryDark;
+  stroke: vars.$primaryMedium;
+}
+
+.hexa-medium {
+  fill: vars.$primaryMedium;
+  stroke: vars.$primaryMedium;
+}
+
+.hexa-flash {
+  fill: vars.$primaryDark;
+  stroke: vars.$flashColor;
+}
+
+.large {
+  width: 15%;
+  stroke-width: 3px;
+}
+
+.medium {
+  width: 12%;
+  stroke-width: 3px;
+}
+
+.small {
+  width: 8%;
+  stroke-width: 3px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.one {
+  top: 450px;
+  left: 120px;
+  z-index: 2;
+}
+
+.two {
+  top: 370px;
+  left: 380px;
+}
+
+.three {
+  top: 220px;
+  right: 220px;
+  z-index: 3;
+}
+
+.four {
+  top: 240px;
+  right: -120px;
+}
+
+.five {
+  top: 480px;
+  right: 300px;
+}
+
+.six {
+  top: -90px;
+  right: 480px;
+}
