@@ -1,0 +1,42 @@
+@use '/public/styles/vars';
+
+.svgAnim {
+  // position: absolute;
+  // top: 45%;
+  // left: 100px;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  visibility: hidden;
+}
+.hidden {
+  visibility: hidden;
+}
+
+#circleOrange {
+  fill: #fe800c;
+  width: 100px;
+  height: 100px;
+}
+.ray {
+  fill: none;
+  stroke: #fe800c70;
+  stroke-width: 1;
+}
+.ray circle {
+  fill: #fe800c70;
+  stroke: none;
+  cursor: pointer;
+}
+.ray text {
+  fill: #fe800c70;
+  stroke: none;
+  font-family: sans-serif;
+  color: vars.$primaryDark;
+  font-size: 2rem;
+  visibility: hidden;
+}
+
+.svgAnim img {
+  color: black;
+}

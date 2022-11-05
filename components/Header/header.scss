@@ -25,34 +25,10 @@
       transition: all 0.3s;
 
       &:hover {
-        color: vars.$primaryLight !important;
+        color: white !important;
         transition: all 0.3s;
         animation: jump 1s ease-in-out alternate;
       }
     }
-  }
-}
-
-@keyframes jump {
-  0% {
-    transform: scale(1, 1);
-  }
-  10% {
-    transform: scale(0.9, 1.2) translateY(-5px);
-  }
-  30% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(1.1, 0.8) translateY(0);
-  }
-  57% {
-    transform: scale(1, 1);
-  }
-  64% {
-    transform: scale(0.9, 1.2) translateY(5px);
-  }
-  100% {
-    transform: scale(1, 1) translateY(0);
   }
 }

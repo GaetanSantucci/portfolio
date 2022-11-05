@@ -10,17 +10,17 @@ export default function Contact() {
   return (
     <div className='navigation'>
       <a className='email' id='joinme' href='mailto:'>
-        gaetan.santucci@outlook.com
+        contact@virtualgs.net
       </a>
       <div className='social'>
         <Link href='https://github.com/GaetanSantucci'>
-          <Image className='icon' src={github} alt='logo github' />
+          <Image className='icon animated-letter' src={github} alt='logo github' />
         </Link>
         <Link href='https://www.linkedin.com/in/gaetan-santucci/'>
-          <Image className='icon' src={linkedin} alt='logo linkedin' />
+          <Image className='icon animated-letter' src={linkedin} alt='logo linkedin' />
         </Link>
         <Link href='https://twitter.com/GTNS83'>
-          <Image className='icon' src={twitter} alt='logo twitter' />
+          <Image className='icon animated-letter' src={twitter} alt='logo twitter' />
         </Link>
       </div>
     </div>

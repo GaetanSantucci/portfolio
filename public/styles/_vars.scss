@@ -1,25 +1,12 @@
-// @font-face {
-//   font-family: 'Montserrat';
-//   src: url('/public/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-// }
-
-// @font-face {
-//   font-family: 'Montserrat italic';
-//   src: url('/public/fonts/Montserrat-Italic-VariableFont_wght.ttf')
-//     format('truetype');
-// }
-
-@font-face {
-  font-family: 'Thunder';
-  src: url('/public/fonts/Thunder-VF.ttf') format('truetype');
-}
-
+//Dark theme color
 $primaryDark: #00131c;
 $primaryMedium: #012532;
 $primaryLight: #80a1b1;
 $flashColor: #fe800c;
 
-$border-colored: 1px solid #fe800c;
+//Light theme color
+// $primaryLightTheme: #ffffff;
+// $primaryMediumLigthTheme: #012532;
+// $primaryLightTheme
 
-$fontTitle: 'Thunder';
-$fontText: 'Montserrat', sans-serif;
+$border-colored: 1px solid #fe800c;

@@ -65,3 +65,10 @@
   top: -90px;
   right: 480px;
 }
+
+.skill-tag {
+  position: absolute;
+  z-index: 999;
+  width: 40%;
+  fill: vars.$flashColor;
+}
