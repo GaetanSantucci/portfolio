@@ -3,16 +3,19 @@
 .hexa-light {
   fill: vars.$primaryDark;
   stroke: vars.$primaryMedium;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
 }
 
 .hexa-medium {
   fill: vars.$primaryMedium;
   stroke: vars.$primaryMedium;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
 }
 
 .hexa-flash {
   fill: vars.$primaryDark;
   stroke: vars.$flashColor;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
 }
 
 .large {
@@ -68,7 +71,10 @@
 
 .skill-tag {
   position: absolute;
-  z-index: 999;
-  width: 40%;
-  fill: vars.$flashColor;
+  z-index: 1;
+  width: 45%;
+  fill: vars.$primaryDark;
+  transition: all 0.4s;
+  filter: drop-shadow(5px 10px 15px rgb(0 0 0 / 0.4));
+  transform: rotateY(-45deg), perspective(200);
 }

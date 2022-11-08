@@ -1,8 +1,9 @@
 @use '/public/styles/vars';
 
 .logo {
-  margin-top: 2rem;
+  margin-top: 15rem;
   width: 25%;
+  filter: drop-shadow(0 3px 5px #00000060);
 }
 
 .cls-1 {

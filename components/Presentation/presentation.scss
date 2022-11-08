@@ -13,17 +13,18 @@
   color: vars.$primaryLight;
 
   &-card {
-    width: 65%;
+    width: 69%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 400px;
-    background-color: vars.$primaryMedium;
+    background-color: vars.$primaryDark;
     border-radius: 0.5rem;
     transition: all 0.6s;
     border-bottom: 1px solid vars.$flashColor;
     border-width: 0.4rem;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
 
     &:hover {
       border-color: vars.$primaryLight;
@@ -53,7 +54,7 @@
       margin: 1rem 5rem 1rem 0;
       line-height: 1.6;
       letter-spacing: 1px;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       color: vars.$primaryLight;
 
       & span {

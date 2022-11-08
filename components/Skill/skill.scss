@@ -31,38 +31,10 @@
     font-size: 5rem;
     font-weight: 500;
   }
+}
 
-  &__card {
-    width: 65%;
-    height: 600px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 0.5rem;
-    background-color: vars.$primaryMedium;
-    transition: all 0.6s;
-    border-bottom: 1px solid vars.$flashColor;
-    border-width: 0.4rem;
-
-    &__animation {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    &__tag {
-      overflow: hidden;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      &__img {
-        position: absolute;
-        width: 50%;
-        z-index: 1;
-      }
-    }
-  }
+.polygon {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: vars.$primaryLight;
+  transform: rotate(90deg);
 }
