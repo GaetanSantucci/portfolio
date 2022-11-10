@@ -12,18 +12,18 @@
   margin-bottom: 2rem;
 }
 
-.email::before {
-  content: '';
-  display: block;
+.send-mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
   width: 40px;
   height: 2px;
-  background: vars.$flashColor;
-  left: 0;
-  top: 50%;
-  position: absolute;
+  border: 1px solid vars.$flashColor;
 }
 .email {
-  margin-left: 50px;
   font-size: 1rem;
   color: vars.$flashColor;
   transition: all 0.4s;
