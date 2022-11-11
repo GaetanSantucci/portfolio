@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .send-mail {
@@ -24,14 +24,15 @@
   border: 1px solid vars.$flashColor;
 }
 .email {
+  font-family: var(--fontText);
   font-size: 1rem;
   color: vars.$flashColor;
   transition: all 0.4s;
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   margin: 0.4rem;
   transition: transform 0.2s;
 }

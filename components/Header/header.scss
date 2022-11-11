@@ -14,14 +14,13 @@
   &_letter {
     display: flex;
     flex-wrap: nowrap;
-    margin-top: 3rem;
-    font-size: 10rem;
+    font-size: 6rem;
     font-family: var(--fontText);
-    font-weight: 500;
+    font-weight: 200;
     user-select: none;
 
     & > h2 {
-      margin: 2rem;
+      // margin: 2rem;
       transition: all 0.3s;
 
       &:hover {

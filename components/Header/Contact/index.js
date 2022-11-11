@@ -12,7 +12,7 @@ import twitter from '/public/images/twitter.png'
 export default function Contact() {
 
   useEffect(() => {
-    gsap.to('.bounce', { duration: 0.6, x: 50, ease: "circ.in", repeat: -1, yoyo: true })
+    gsap.to('.bounce', { duration: 0.6, x: 32, ease: "circ.in", repeat: -1, yoyo: true })
   });
 
   return (

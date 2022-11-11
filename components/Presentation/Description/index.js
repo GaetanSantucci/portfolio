@@ -1,6 +1,10 @@
+import user from '/data/owner.js';
+
 export default function Description() {
+  user.map((elem) => console.log(elem.customer.name))
   return (
     <div className='container-presentation-card-description'>
+
       <p><span >name :</span> Santucci</p>
       <p><span >firstname :</span> Gaëtan</p>
       <p><span >nationality :</span> french fries</p>

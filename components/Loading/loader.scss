@@ -1,0 +1,22 @@
+@use '/public/styles/vars';
+
+.container__loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > svg {
+    stroke-dasharray: 1800;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 2s ease;
+    animation: draw 3s ease infinite;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dasharray: 0;
+  }
+}
