@@ -1,20 +1,9 @@
-@use 'vars.scss';
+@use 'vars';
 
 @font-face {
   font-family: 'Montserrat';
   src: url('/public/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
-
-@font-face {
-  font-family: 'Montserrat italic';
-  src: url('/public/fonts/Montserrat-Italic-VariableFont_wght.ttf')
-    format('truetype');
-}
-
-// @font-face {
-//   font-family: 'Moniqa';
-//   src: url('/public/fonts/MONIQA-VF.ttf') format('truetype');
-// }
 
 :root {
   --fontText: 'Montserrat';

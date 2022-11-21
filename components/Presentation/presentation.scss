@@ -12,8 +12,8 @@
   font-family: var(--fontText);
   color: vars.$primaryLight;
 
-  &-card {
-    width: 69%;
+  &__card {
+    width: 60%;
     position: relative;
     display: flex;
     align-items: center;
@@ -32,14 +32,15 @@
       transition: all 0.6s;
     }
 
-    &-image {
+    &__image {
       overflow: hidden;
       position: relative;
       width: 50%;
       display: flex;
 
       &--me {
-        margin: 3rem 0 3rem 5rem;
+        width: 60%;
+        height: auto;
         object-fit: contain;
         filter: grayscale(80%);
         transition: filter 1s;
@@ -53,9 +54,9 @@
         }
       }
     }
-    &-description {
+    &__description {
       width: 50%;
-      margin: 1rem 5rem 1rem 0;
+      margin-right: 5rem;
       line-height: 1.6;
       letter-spacing: 1px;
       font-size: 1.2rem;
@@ -102,7 +103,17 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .container__presentation-card {
+  .container__presentation__card {
     width: 75%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container__presentation__card {
+    width: 95%;
+  }
+
+  .scrollTitle {
+    font-size: 6rem;
   }
 }

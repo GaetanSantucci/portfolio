@@ -1,4 +1,4 @@
-import { gsap } from 'gsap';
+import gsap from 'gsap';
 
 export function letteringHover() {
   const blob = document.querySelectorAll('span');
@@ -14,14 +14,9 @@ export function letteringHover() {
 
 export function headerAnimation() {
 
-  const logo = document.querySelector('.logo')
-  const hexaSma = document.querySelectorAll('.small')
-  const hexaMed = document.querySelectorAll('.medium')
-  const hexaLar = document.querySelectorAll('.large')
-
-  gsap.to(logo, {
+  gsap.to('.logo', {
     scrollTrigger: {
-      trigger: '.header',
+      trigger: 'header',
       scrub: true,
       start: "bottom 90%",
 
@@ -30,16 +25,15 @@ export function headerAnimation() {
     autoAlpha: 0,
     y: 400,
   })
-  gsap.to(hexaSma, {
+  gsap.to('.small', {
     scrollTrigger: {
       trigger: '.header',
       scrub: true,
       start: "bottom 80%"
     },
-    // delay: 0.2,
     y: -200,
   })
-  gsap.to(hexaMed, {
+  gsap.to('.medium', {
     scrollTrigger: {
       trigger: '.header',
       scrub: true,
@@ -49,7 +43,7 @@ export function headerAnimation() {
     y: 200,
     autoAlpha: 0
   }),
-    gsap.to(hexaLar, {
+    gsap.to('.large', {
       scrollTrigger: {
         trigger: '.header',
         scrub: true,
@@ -62,7 +56,7 @@ export function headerAnimation() {
 
 export function presentationAnimation() {
 
-  gsap.to('.container__presentation-card', {
+  gsap.to('.container__presentation__card', {
     scrollTrigger: {
       trigger: '.container__presentation',
       scrub: true,
@@ -73,22 +67,22 @@ export function presentationAnimation() {
   })
   gsap.to('.scrollTitle', {
     scrollTrigger: {
-      trigger: '.presentation__card',
+      trigger: '.container__presentation',
       scrub: true,
-      start: "top top"
+      start: "top center"
     },
     delay: -0.2,
     y: 600,
   })
   gsap.to('.scrollIntro', {
     scrollTrigger: {
-      trigger: '.presentation__card',
+      trigger: '.container__presentation',
       scrub: true,
-      start: "top top"
+      start: "top 40%"
     },
     y: 200,
   })
-  gsap.to('.container__presentation-card-image--me', {
+  gsap.to('.container__presentation__card__image--me', {
     scrollTrigger: {
       trigger: '.scrollTitle',
       scrub: true,
@@ -97,7 +91,7 @@ export function presentationAnimation() {
     x: 0,
     autoAlpha: 1,
   })
-  gsap.to('.container__presentation-card-description', {
+  gsap.to('.container__presentation__card__description', {
     scrollTrigger: {
       trigger: '.scrollTitle',
       scrub: true,
@@ -109,10 +103,8 @@ export function presentationAnimation() {
 }
 
 export function skillAnimation() {
-  const title = document.querySelector('.container__skill__title');
-  const intro = document.querySelector('.container__skill__intro');
 
-  gsap.to(title, {
+  gsap.to('.container__skill__title', {
     scrollTrigger: {
       trigger: '.container__skill',
       scrub: true,
@@ -120,11 +112,11 @@ export function skillAnimation() {
     },
     y: 250
   })
-  gsap.to(intro, {
+  gsap.to('.container__skill__intro', {
     scrollTrigger: {
       trigger: '.container__skill',
       scrub: true,
-      start: 'top top',
+      start: 'top +=800',
     },
     y: -150
   })
@@ -132,7 +124,7 @@ export function skillAnimation() {
   gsap.to('.container__skill__list__details',
     {
       scrollTrigger: {
-        trigger: intro,
+        trigger: '.container__skill__intro',
       },
       autoAlpha: 1,
       y: 0,
@@ -141,7 +133,7 @@ export function skillAnimation() {
 
   gsap.to('.box-shadow-left', {
     scrollTrigger: {
-      trigger: intro,
+      trigger: '.container__skill__intro',
       scrub: true,
     },
     autoAlpha: 1,
@@ -165,7 +157,7 @@ export function skillAnimation() {
   })
   gsap.to('.skillcard', {
     scrollTrigger: {
-      trigger: title,
+      trigger: '.container__skill__title',
       scrub: true,
     },
     y: 50,

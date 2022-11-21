@@ -8,32 +8,44 @@ import Presentation from '../components/Presentation';
 import Skill from '../components/Skill';
 import Project from '../components/Project';
 import Footer from '../components/Footer';
-// import Loading from '../components/Loading';
-import { useEffect } from 'react';
-import gsap  from 'gsap/all';
+import Loading from '../components/Loading';
+import { useEffect, useState } from 'react';
+import gsap  from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { headerAnimation, letteringHover, presentationAnimation, projectAnimation, skillAnimation } from '../utils/gsap.js';
 
 export default function Home() {
 
-  // const isLoading =  true/* useSelector((state) => state.isLoading) */
+  const [isLoading, setIsLoading] = useState(true);
+  const [animation, setAnimation] = useState(false)
+
   gsap.registerPlugin(ScrollTrigger);
 
-  useEffect(()=>{
-    // scrollSmoother.create();
+  useEffect(() => {
+    if (isLoading) {
+      setTimeout(() => {
+      setIsLoading(false);
+      setAnimation(true)
+    }, 2000);
+  }
+}, [isLoading]);
+  
+useEffect(()=>{
+  if(animation){
     headerAnimation();
     letteringHover();
     presentationAnimation();
     skillAnimation();
     projectAnimation();
-  }, [])
+  }
+}, [animation])
 
-  // if(isLoading){
-  //   return <Loading />
-  // }
+  if(isLoading){
+    return <Loading />
+  }
 
   return (
-    <div className='container' >
+  <div className='container' >
       <Header />
       <Hexagone />
       <Presentation />

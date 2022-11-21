@@ -6,17 +6,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
 
   & > svg {
     stroke-dasharray: 1800;
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 3600;
     transition: stroke-dashoffset 2s ease;
-    animation: draw 3s ease infinite;
+    animation: draw 2.5s linear infinite;
   }
 }
 
 @keyframes draw {
   to {
-    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
   }
 }
