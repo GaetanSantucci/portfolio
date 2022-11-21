@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 
 export default function Logo() {
 
+
   useEffect(() => {
 
     const TL = gsap.timeline();

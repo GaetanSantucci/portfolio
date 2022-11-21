@@ -1,5 +1,9 @@
 @use '/public/styles/vars';
 
+.skillcard {
+  width: 100%;
+}
+
 .container__skillcard__front {
   width: 100%;
   display: flex;
@@ -33,7 +37,7 @@
   }
 
   & li {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 1rem 5rem;
     color: vars.$primaryLight;
@@ -58,6 +62,7 @@
   }
 
   &__details {
+    transform: translateY(100px);
     width: 50%;
     display: flex;
     align-items: center;
@@ -66,8 +71,20 @@
 }
 
 .box-shadow {
-  width: 50%;
+  width: 45%;
+  padding: 1.5rem;
   filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.6));
+  opacity: 0;
+  visibility: hidden;
+}
+
+.box-shadow-left,
+.box-shadow-left-two {
+  translate: -250px 0;
+}
+
+.box-shadow-right {
+  translate: 250px 0;
 }
 
 #mongo {

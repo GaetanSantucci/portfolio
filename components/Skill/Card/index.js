@@ -61,77 +61,82 @@ export default function SkillCard() {
     }, {
       name: 'Other',
       desc: 'Vsc'
+    }, {
+      name: 'Other',
+      desc: 'CMS (WIX)'
     }
   ]
   return (
-    <div className='container__skillcard__front'>
-      <div className='container__skill__list left'>
-        <div className='box-shadow'>
-          <ul className='container__skill__list--left'>
-            {
-              skill.map((spec) => {
-                if (spec.name === 'Front') {
-                  return <li classname='skill' key={spec.desc}>- {spec.desc}</li>
-                }
-              })
-            }
-          </ul>
-        </div>
-        <div className='container__skill__list__details'>
-          <h2>FRONT</h2>
-          <div className='images'>
-            <Image src={react} alt='logo react' />
-            <Image src={nextjs} alt='logo nextjs' />
-            <Image src={sass} alt='logo sass' />
+    <div className='skillcard'>
+      <div className='container__skillcard__front skillcard'>
+        <div className='container__skill__list left'>
+          <div className='box-shadow box-shadow-left'>
+            <ul className='container__skill__list--left'>
+              {
+                skill.map((spec) => {
+                  if (spec.name === 'Front') {
+                    return <li className='skill' key={spec.desc}>- {spec.desc}</li>
+                  }
+                })
+              }
+            </ul>
+          </div>
+          <div className='container__skill__list__details'>
+            <h2>FRONT</h2>
+            <div className='images'>
+              <Image src={react} alt='logo react' />
+              <Image src={nextjs} alt='logo nextjs' />
+              <Image src={sass} alt='logo sass' />
+            </div>
           </div>
         </div>
-      </div>
-      <div className='container__skill__list right'>
-        <div className='container__skill__list__details'>
-          <div className='images'>
-            <Image src={node} alt='logo nodejs' />
-            <Image src={mongo} alt='logo mongodb' id='mongo' />
-            <Image src={postgres} alt='logo postgresql' />
+        <div className='container__skill__list right skillcard'>
+          <div className='container__skill__list__details'>
+            <div className='images'>
+              <Image src={node} alt='logo nodejs' />
+              <Image src={mongo} alt='logo mongodb' id='mongo' />
+              <Image src={postgres} alt='logo postgresql' />
+            </div>
+            <h2>BACK</h2>
           </div>
-          <h2>BACK</h2>
+          <div className='box-shadow box-shadow-right'>
+            <ul className='container__skill__list--right'>
+              {
+                skill.map((spec) => {
+                  if (spec.name === 'Back') {
+                    return <li className='skill' key={spec.desc}>{spec.desc} -</li>
+                  }
+                })
+              }
+            </ul>
+          </div>
         </div>
-        <div className='box-shadow'>
-          <ul className='container__skill__list--right'>
-            {
-              skill.map((spec) => {
-                if (spec.name === 'Back') {
-                  return <li classname='skill' key={spec.desc}>{spec.desc} -</li>
-                }
-              })
-            }
-          </ul>
-        </div>
-      </div>
-      <div className='container__skill__list left'>
-        <div className='box-shadow'>
-          <ul className='container__skill__list--left'>
-            {
-              skill.map((spec) => {
-                if (spec.name === 'Other') {
-                  return (
-                    <li classname='skill' key={spec.desc}>- {spec.desc}</li>
+        <div className='container__skill__list left skillcard'>
+          <div className='box-shadow box-shadow-left-two'>
+            <ul className='container__skill__list--left'>
+              {
+                skill.map((spec) => {
+                  if (spec.name === 'Other') {
+                    return (
+                      <li className='skill' key={spec.desc}>- {spec.desc}</li>
 
-                  )
-                }
-              })
-            }
-          </ul>
-        </div>
-        <div className='container__skill__list__details'>
-          <h2>TOOLS</h2>
-          <div className='images'>
-            <Image src={windows} alt='logo windows' />
-            <Image src={linux} alt='logo linux' />
-            <Image src={github} alt='logo github' />
+                    )
+                  }
+                })
+              }
+            </ul>
+          </div>
+          <div className='container__skill__list__details'>
+            <h2>TOOLS</h2>
+            <div className='images'>
+              <Image src={windows} alt='logo windows' />
+              <Image src={linux} alt='logo linux' />
+              <Image src={github} alt='logo github' />
 
+            </div>
           </div>
         </div>
-      </div>
-    </div >
+      </div >
+    </div>
   )
 }

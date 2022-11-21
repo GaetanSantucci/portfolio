@@ -1,17 +1,12 @@
 @use '/public/styles/vars';
 
 .logo {
-  margin-top: 8rem;
-  width: 25%;
+  // margin-top: 5rem;
+  width: 350px;
   filter: drop-shadow(0 3px 5px #00000060);
 }
 
 .cls-1 {
   opacity: 0;
   visibility: hidden;
-}
-
-.svg-top {
-  position: absolute;
-  top: -100px;
 }
