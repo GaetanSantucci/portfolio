@@ -12,7 +12,7 @@ import Loading from '../components/Loading';
 import { useEffect, useState } from 'react';
 import gsap  from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { headerAnimation, letteringHover, presentationAnimation, projectAnimation, skillAnimation } from '../utils/gsap.js';
+import { headerAnimation, letteringHover, presentationAnimation, projectAnimation, skillAnimation } from '../utils/animation.js';
 
 export default function Home() {
 
