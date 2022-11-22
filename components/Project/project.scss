@@ -2,7 +2,7 @@
 
 .container__project {
   width: 100%;
-  height: 1000px;
+  // height: 1000px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   font-family: var(--fontText);
   color: vars.$primaryLight;
 
-  &__scrollTitle {
+  &__title {
     top: 0;
     right: 5%;
     font-size: 12rem;
@@ -20,7 +20,7 @@
     color: vars.$primaryMedium;
   }
 
-  &__scrollIntro {
+  &__subtitle {
     top: 25%;
     right: 25%;
     font-size: 2.8rem;
@@ -87,7 +87,56 @@
     }
   }
 }
+@media screen and (max-width: 600px) {
+  .container__project {
+    margin-bottom: 3rem;
+    text-align: end;
 
-// .scrollIntro {
-//   color: vars.$primaryLight;
-// }
+    &__title {
+      width: 100%;
+      font-size: 4.5rem;
+      font-weight: 600;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    &__subtitle {
+      width: 100%;
+      font-weight: 200;
+      font-size: 1.8rem;
+      margin: 0 0.8rem 2rem 0;
+    }
+
+    &__effect {
+      font-size: 3rem;
+      // font-family: var(--fontTitle);
+      color: vars.$flashColor;
+      letter-spacing: 2px;
+    }
+
+    &__card {
+      width: 100%;
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+
+      &__line {
+        display: none;
+      }
+
+      &__hexa {
+        width: 45%;
+
+        &__link {
+          z-index: 1;
+          color: vars.$primaryLight;
+          font-size: 1rem;
+          font-weight: 400;
+          // padding: 8rem 6rem;
+          transition: all 1s;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

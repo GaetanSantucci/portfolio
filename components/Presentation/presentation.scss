@@ -121,8 +121,9 @@
 
 @media screen and (max-width: 600px) {
   .container__presentation {
-    text-align: end;
     justify-content: space-evenly;
+    margin-bottom: 5rem;
+    text-align: end;
     &__title {
       width: 100%;
       font-size: 4.5rem;
