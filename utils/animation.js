@@ -23,7 +23,7 @@ export function headerAnimation() {
     },
     duration: 2,
     autoAlpha: 0,
-    y: 400,
+    y: 200,
   })
   gsap.to('.small', {
     scrollTrigger: {

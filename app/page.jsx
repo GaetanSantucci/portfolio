@@ -15,19 +15,19 @@ import { headerAnimation, letteringHover, presentationAnimation, projectAnimatio
 
 export default function Home() {
 
-  // const [isLoading, setIsLoading] = useState(true);
-  const [animation, setAnimation] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
+  const [animation, setAnimation] = useState(false)
 
   gsap.registerPlugin(ScrollTrigger);
 
-//   useEffect(() => {
-//     if (isLoading) {
-//       setTimeout(() => {
-//       setIsLoading(false);
-//       setAnimation(true)
-//     }, 2000);
-//   }
-// }, [isLoading]);
+  useEffect(() => {
+    if (isLoading) {
+      setTimeout(() => {
+      setIsLoading(false);
+      setAnimation(true)
+    }, 2000);
+  }
+}, [isLoading]);
   
 useEffect(()=>{
   if(animation){
@@ -39,9 +39,9 @@ useEffect(()=>{
   }
 }, [animation])
 
-  // if(isLoading){
-  //   return <Loading />
-  // }
+  if(isLoading){
+    return <Loading />
+  }
 
   return (
   <div className='container' >
