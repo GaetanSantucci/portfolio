@@ -1,5 +1,5 @@
 import './loader.scss';
-import HexaLoader from '../Parallax/hexaLoader'
+import HexaLoader from '../Parallax/hexaloader'
 
 export default function Loading() {
   return (
