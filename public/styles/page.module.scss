@@ -119,6 +119,10 @@
     width: 100%;
     flex-direction: column;
   }
+
+  .logo {
+    width: 60%;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
