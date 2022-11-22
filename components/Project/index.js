@@ -4,7 +4,6 @@ import HexaProject from '../Parallax/hexaProject';
 import './project.scss';
 import Link from 'next/link';
 import projects from '/data/project';
-import Image from 'next/image';
 
 
 export default function Project() {
