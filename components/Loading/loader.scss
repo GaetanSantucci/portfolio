@@ -21,3 +21,11 @@
     stroke-dashoffset: 0;
   }
 }
+
+@media screen and (min-width: 600px) {
+  .container__loader {
+    & > svg {
+      width: 270px;
+    }
+  }
+}

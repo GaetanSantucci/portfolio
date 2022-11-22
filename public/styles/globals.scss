@@ -1,19 +1,24 @@
 @use 'vars';
 
-// @font-face {
-//   font-family: 'Montserrat';
-//   src: url('/public/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-// }
+@font-face {
+  font-family: 'moniqa';
+  src: url('../fonts/moniqa.ttf') format('truetype');
+}
 
-// :root {
-//   --fontText: 'Montserrat';
-// }
+@font-face {
+  font-family: 'thunder';
+  src: url('../fonts/Thunder.ttf') format('truetype');
+}
+
+:root {
+  --fontTitle: 'moniqa';
+}
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--fontText) sans-serif;
+  // font-family: var(--fontText) sans-serif;
   overflow-x: hidden;
 }
 
@@ -36,12 +41,36 @@ a {
   }
 }
 
+.logo {
+  width: 350px;
+  filter: drop-shadow(0 3px 5px #00000060);
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 200px;
+  }
+
+  .hexa-loader {
+    width: 50%;
+  }
+
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six {
+    display: none;
+  }
+}
+
 @keyframes jump {
   0% {
     transform: scale(1, 1);
   }
   10% {
-    transform: scale(0.9, 1.2) translateY(-5px);
+    transform: scale(0.9, 1.2) translateY(-2px);
   }
   30% {
     transform: scale(1, 1);
@@ -53,7 +82,7 @@ a {
     transform: scale(1, 1);
   }
   64% {
-    transform: scale(0.9, 1.2) translateY(5px);
+    transform: scale(0.9, 1.2) translateY(2px);
   }
   100% {
     transform: scale(1, 1) translateY(0);

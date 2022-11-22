@@ -12,7 +12,8 @@
   margin-bottom: 1rem;
 }
 
-.send-mail {
+.send-mail,
+.social {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,26 +40,26 @@
 
 .icon:hover {
   transform: scale(1.1);
-  transition: transform 0.2s;
+  transition: all 0.2s;
+  opacity: 0.8;
 }
 
-.animated-letter:hover {
+.animated__letter:hover {
   color: white !important;
   transition: all 0.3s;
   animation: jump 1s ease-in-out alternate;
 }
 
-.social {
-  margin-right: 45px;
-}
+@media screen and (max-width: 600px) {
+  .line {
+    width: 10px;
+    height: 1px;
+  }
+  .email {
+    font-size: 0.8rem;
+  }
 
-.social::before {
-  content: '';
-  display: block;
-  width: 40px;
-  height: 2px;
-  background: vars.$flashColor;
-  right: 0;
-  top: 50%;
-  position: absolute;
+  .icon {
+    margin: 0.2rem;
+  }
 }

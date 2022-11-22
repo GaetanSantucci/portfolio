@@ -3,10 +3,13 @@ import '/public/styles/globals.scss'
 import Head from './head';
 
 import { Montserrat } from '@next/font/google';
+import localFont from '@next/font/local';
+
+const moniqa = localFont({ src: '../public/fonts/moniqa.ttf'})
 
 const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['200', '400'],
+  weight: ['200', '400', '600'],
 });
 
 export default function RootLayout({ children }) {

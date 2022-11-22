@@ -16,7 +16,7 @@ import { headerAnimation, letteringHover, presentationAnimation, projectAnimatio
 
 export default function Home() {
 
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [animation, setAnimation] = useState(false)
 
   gsap.registerPlugin(ScrollTrigger);

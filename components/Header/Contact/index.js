@@ -12,7 +12,7 @@ import twitter from '/public/images/twitter.png'
 export default function Contact() {
 
   useEffect(() => {
-    gsap.to('.bounce', { duration: 0.6, x: 32, ease: "circ.in", repeat: -1, yoyo: true })
+    gsap.to('.bounce', { duration: 0.6, x: 15, ease: "power1", repeat: -1, yoyo: true })
   });
 
   return (
@@ -25,14 +25,15 @@ export default function Contact() {
       </div>
       <div className='social'>
         <Link href='https://github.com/GaetanSantucci'>
-          <Image className='icon animated-letter' src={github} alt='logo github' />
+          <Image className='icon animated__letter' src={github} alt='logo github' />
         </Link>
         <Link href='https://www.linkedin.com/in/gaetan-santucci/'>
-          <Image className='icon animated-letter' src={linkedin} alt='logo linkedin' />
+          <Image className='icon animated__letter' src={linkedin} alt='logo linkedin' />
         </Link>
         <Link href='https://twitter.com/GTNS83'>
-          <Image className='icon animated-letter' src={twitter} alt='logo twitter' />
+          <Image className='icon animated__letter' src={twitter} alt='logo twitter' />
         </Link>
+        <div className='line'></div>
       </div>
     </div>
   )

@@ -8,20 +8,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 5rem;
-  z-index: 999;
 
-  &_letter {
-    position: absolute;
-    bottom: 10%;
+  &__letter {
     display: flex;
     flex-wrap: nowrap;
     font-size: 8rem;
-    font-family: var(--fontText);
-    font-weight: 100;
+    font-family: var(--fontTitle);
     user-select: none;
 
     & > h2 {
+      margin: 0.2rem;
       transition: all 0.3s;
 
       &:hover {
@@ -30,5 +26,15 @@
         animation: jump 1s ease-in-out alternate;
       }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    justify-content: center;
+  }
+
+  .header__letter > h2 {
+    font-size: 6.5rem;
   }
 }
