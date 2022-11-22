@@ -2,7 +2,6 @@
 import '/public/styles/page.module.scss';
 
 import Hexagone from '../components/Parallax/hexaHeader.js'
-
 import Header from '../components/Header';
 import Presentation from '../components/Presentation';
 import Skill from '../components/Skill';
@@ -16,7 +15,7 @@ import { headerAnimation, letteringHover, presentationAnimation, projectAnimatio
 
 export default function Home() {
 
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [animation, setAnimation] = useState(false)
 
   gsap.registerPlugin(ScrollTrigger);

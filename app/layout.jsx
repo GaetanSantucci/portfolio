@@ -5,7 +5,6 @@ import Head from './head';
 import { Montserrat } from '@next/font/google';
 import localFont from '@next/font/local';
 
-const moniqa = localFont({ src: '../public/fonts/moniqa.ttf'})
 
 const montserrat = Montserrat({
   subsets: ['latin'],
