@@ -3,7 +3,6 @@ import '/public/styles/globals.scss'
 import Head from './head';
 
 import { Montserrat } from '@next/font/google';
-import localFont from '@next/font/local';
 
 
 const montserrat = Montserrat({
