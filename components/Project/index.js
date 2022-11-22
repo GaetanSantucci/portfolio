@@ -15,7 +15,7 @@ export default function Project() {
         <span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>s</span></span></h3>
       <div className='container__project__card demoWrapper'>
         <div className='container__project__card__line '></div>
-        {
+        {/* {
           projects.map((project) => {
             return (
 
@@ -28,7 +28,7 @@ export default function Project() {
 
             )
           })
-        }
+        } */}
       </div>
     </div>
   )
