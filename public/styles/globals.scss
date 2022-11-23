@@ -1,17 +1,13 @@
 @use 'vars';
 
 @font-face {
-  font-family: 'moniqa';
-  src: url('../fonts/moniqa.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'thunder';
-  src: url('../fonts/Thunder.ttf') format('truetype');
+  font-family: 'halcyon';
+  src: url('../fonts/halcyon.otf') format('opentype');
+  src: url('../fonts/halcyon.woff') format('woff');
 }
 
 :root {
-  --fontTitle: 'moniqa';
+  --fontTitle: 'halcyon';
 }
 
 html,

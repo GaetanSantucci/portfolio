@@ -2,7 +2,7 @@
 
 .footer {
   width: 100%;
-  background-color: black;
+  background-color: #000a0e;
   text-align: center;
   font-family: var(--fontText);
   font-size: 1.2rem;
@@ -11,10 +11,18 @@
 
   & > p {
     padding: 1.2rem 0;
+    & > a {
+      color: vars.$primaryLight;
+      font-weight: 500;
+    }
   }
+}
 
-  & > a {
-    color: vars.$primaryLight;
-    font-weight: 400;
+@media screen and (max-width: 600px) {
+  .footer {
+    font-size: 0.9rem;
+    & > p {
+      padding: 0.8rem 0;
+    }
   }
 }
