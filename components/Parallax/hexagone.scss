@@ -19,17 +19,17 @@
 }
 
 .large {
-  width: 15%;
+  width: 250px;
   stroke-width: 3px;
 }
 
 .medium {
-  width: 12%;
+  width: 190px;
   stroke-width: 3px;
 }
 
 .small {
-  width: 8%;
+  width: 150px;
   stroke-width: 3px;
 }
 
@@ -38,35 +38,46 @@
 }
 
 .one {
-  top: 450px;
-  left: 120px;
+  bottom: 15%;
+  left: 7%;
   z-index: 2;
 }
 
 .two {
-  top: 370px;
-  left: 380px;
+  bottom: 30%;
+  left: 20%;
 }
 
 .three {
-  top: 220px;
-  right: 220px;
+  top: 20%;
+  right: 15%;
   z-index: 3;
 }
 
 .four {
-  top: 240px;
-  right: -120px;
+  top: 27%;
+  right: 1%;
 }
 
 .five {
-  top: 480px;
-  right: 300px;
+  bottom: 15%;
+  right: 20%;
 }
 
 .six {
-  top: -90px;
-  right: 480px;
+  top: -8%;
+  right: 35%;
+}
+
+.seven {
+  top: 10%;
+  left: 6%;
+  z-index: 5;
+}
+
+.eight {
+  top: 20%;
+  left: 15%;
 }
 
 .skill-tag {
@@ -85,5 +96,35 @@
   &:hover {
     stroke: vars.$flashColor;
     transition: all 0.4s;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .two,
+  .three,
+  .five,
+  .seven {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .four {
+    width: 150px;
+    top: 74%;
+    right: 0;
+  }
+
+  .six {
+    width: 130px;
+    left: -8%;
+    top: 18%;
+    stroke: vars.$flashColor;
+  }
+
+  .eight {
+    width: 140px;
+    left: 45%;
+    top: 2%;
   }
 }

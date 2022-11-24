@@ -2,7 +2,9 @@
 
 .logo {
   width: 350px;
-  filter: drop-shadow(0 3px 5px #00000060);
+  margin-top: 7rem;
+  z-index: 999;
+  filter: drop-shadow(8px 15px 10px #00000080);
 }
 
 @media screen and (max-width: 600px) {

@@ -78,14 +78,14 @@
   visibility: hidden;
 }
 
-// .box-shadow-left,
-// .box-shadow-left-two {
-//   translate: -250px 0;
-// }
+.box-shadow-left,
+.box-shadow-left-two {
+  translate: -400px 0;
+}
 
-// .box-shadow-right {
-//   translate: 250px 0;
-// }
+.box-shadow-right {
+  translate: 400px 0;
+}
 
 #mongo {
   width: 42px;
@@ -123,6 +123,15 @@
     opacity: 1;
     visibility: inherit;
   }
+
+  // .box-shadow-left,
+  // .box-shadow-left-two {
+  //   translate: 0 0;
+  // }
+
+  // .box-shadow-right {
+  //   translate: 0 0;
+  // }
 
   // .container__skill__list--left > li,
   // .container__skill__list--right > li {

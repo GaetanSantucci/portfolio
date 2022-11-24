@@ -24,7 +24,7 @@ export default function Home() {
     if (isLoading) {
       setTimeout(() => {
       setIsLoading(false);
-      // setAnimation(true)
+      setAnimation(true)
     }, 2000);
   }
 }, [isLoading]);
@@ -46,7 +46,7 @@ useEffect(()=>{
   return (
   <div className='container' >
       <Header />
-      <Hexagone />
+      <div><Hexagone /></div>
       <Presentation />
       <Skill />
       <Project />

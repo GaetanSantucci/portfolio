@@ -39,7 +39,6 @@ export function headerAnimation() {
       scrub: true,
       start: "bottom 80%"
     },
-    // delay: 0.2,
     y: 200,
     autoAlpha: 0
   }),
@@ -49,8 +48,8 @@ export function headerAnimation() {
         scrub: true,
         start: "bottom 75%"
       },
-      delay: -0.2,
-      y: 400,
+      y: 300,
+      autoAlpha: 0
     })
 }
 
@@ -60,27 +59,27 @@ export function presentationAnimation() {
     scrollTrigger: {
       trigger: '.container__presentation',
       scrub: true,
-      start: "+=700"
+      start: "bottom center"
     },
-    y: 100,
+    // y: 250,
     autoAlpha: 0
   })
-  gsap.to('.scrollTitle', {
+  gsap.to('.container__presentation__title', {
     scrollTrigger: {
       trigger: '.container__presentation',
       scrub: true,
       start: "top center"
     },
     delay: -0.2,
-    y: 600,
+    y: 240,
   })
-  gsap.to('.scrollIntro', {
+  gsap.to('.container__presentation__subtitle', {
     scrollTrigger: {
       trigger: '.container__presentation',
       scrub: true,
       start: "top 40%"
     },
-    y: 200,
+    y: 50,
   })
   gsap.to('.container__presentation__card__image--me', {
     scrollTrigger: {
@@ -112,19 +111,19 @@ export function skillAnimation() {
     },
     y: 250
   })
-  gsap.to('.container__skill__intro', {
+  gsap.to('.container__skill__subtitle', {
     scrollTrigger: {
       trigger: '.container__skill',
       scrub: true,
       start: 'top +=800',
     },
-    y: -150
+    y: -50
   })
 
   gsap.to('.container__skill__list__details',
     {
       scrollTrigger: {
-        trigger: '.container__skill__intro',
+        trigger: '.container__skill__subtitle',
       },
       autoAlpha: 1,
       y: 0,
@@ -133,7 +132,7 @@ export function skillAnimation() {
 
   gsap.to('.box-shadow-left', {
     scrollTrigger: {
-      trigger: '.container__skill__intro',
+      trigger: '.container__skill__subtitle',
       scrub: true,
     },
     autoAlpha: 1,
@@ -165,27 +164,11 @@ export function skillAnimation() {
 }
 
 export function projectAnimation() {
-  const TLProject = gsap.timeline();
-
-  TLProject.to('.container__project__title', {
+  gsap.to('.container__project__title', {
     scrollTrigger: {
       trigger: '.container__project',
       scrub: true,
     },
-    y: 200,
+    y: 150,
   })
-    .to('.container__project__subtitle', {
-      scrollTrigger: {
-        trigger: '.container__project__subtitle',
-        scrub: true,
-      },
-      y: -100,
-    })
-    .to('.container__project__card', {
-      scrollTrigger: {
-        trigger: '.container__project__scrollTitle',
-        scrub: true,
-      },
-      y: 50
-    })
 }

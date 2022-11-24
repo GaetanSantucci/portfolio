@@ -8,11 +8,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  overflow: hidden;
 
   &__letter {
+    z-index: 3;
     display: flex;
     flex-wrap: nowrap;
-    font-size: 8rem;
+    font-size: 10rem;
     font-family: var(--fontTitle);
     user-select: none;
 
@@ -29,12 +31,12 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (min-width: 370px) {
   .header {
     justify-content: center;
   }
 
   .header__letter > h2 {
-    font-size: 6.5rem;
+    font-size: 6.2rem;
   }
 }
