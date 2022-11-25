@@ -29,18 +29,18 @@ export default function Header() {
     <header className='header' >
       <Contact />
       <Logo />
+      <h1 className='header__title'>Hello, I'm Gaetan Santucci</h1>
       <div className='header__letter'>
-        <h2 className='animated__letter'>V</h2>
-        <h2 className='animated__letter'>I</h2>
-        <h2 className='animated__letter'>R</h2>
-        <h2 className='animated__letter'>T</h2>
-        <h2 className='animated__letter'>U</h2>
-        <h2 className='animated__letter'>A</h2>
+        <h2 className='animated__letter'>W</h2>
+        <h2 className='animated__letter'>E</h2>
         <h2 className='animated__letter'>L</h2>
-        <h2 className='animated__letter'>.</h2>
-        <h2 className='animated__letter'>G</h2>
-        <h2 className='animated__letter'>S</h2>
+        <h2 className='animated__letter'>C</h2>
+        <h2 className='animated__letter'>O</h2>
+        <h2 className='animated__letter'>M</h2>
+        <h2 className='animated__letter'>E</h2>
+
       </div>
+      <p>on my portfolio</p>
     </header>
   )
 }
