@@ -29,6 +29,13 @@
     font-weight: 300;
   }
 
+  &__effect {
+    font-size: 6rem;
+    font-family: var(--fontTitle);
+    color: vars.$flashColor;
+    letter-spacing: 2px;
+  }
+
   &__card {
     position: relative;
     width: 70%;
@@ -156,9 +163,6 @@
 
     &__effect {
       font-size: 3rem;
-      font-family: var(--fontTitle);
-      color: vars.$flashColor;
-      letter-spacing: 2px;
     }
 
     &__card {
