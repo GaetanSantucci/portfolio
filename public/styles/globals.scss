@@ -16,6 +16,9 @@ body {
   margin: 0;
   // font-family: var(--fontText) sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  will-change: transform;
+  will-change: filter;
 }
 
 .container {
@@ -36,7 +39,17 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
+    color: vars.$primaryLight;
+    background: vars.$primaryDark;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: vars.$primaryLight;
     background: vars.$primaryDark;
   }
 }
