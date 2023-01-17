@@ -14,10 +14,6 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import { headerAnimation, letteringHover, presentationAnimation, projectAnimation, skillAnimation } from '../utils/animation.js';
 
 export default function Home() {
-
-
-
-
         
   useEffect(()=>{
     gsap.registerPlugin(ScrollTrigger);
