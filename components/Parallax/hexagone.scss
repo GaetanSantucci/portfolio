@@ -111,7 +111,7 @@
 @media screen and (max-width: 600px) {
   .four {
     width: 150px;
-    top: 74%;
+    top: 45%;
     right: 0;
   }
 
@@ -123,8 +123,6 @@
   }
 
   .eight {
-    width: 140px;
-    left: 45%;
-    top: 2%;
+    display: none;
   }
 }
