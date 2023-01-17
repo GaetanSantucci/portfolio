@@ -15,33 +15,18 @@ import { headerAnimation, letteringHover, presentationAnimation, projectAnimatio
 
 export default function Home() {
 
-  const [isLoading, setIsLoading] = useState(true);
-  const [animation, setAnimation] = useState(false)
 
-  gsap.registerPlugin(ScrollTrigger);
 
-  useEffect(() => {
-    if (isLoading) {
-      setTimeout(() => {
-      setIsLoading(false);
-      setAnimation(true)
-    }, 1200);
-  }
-}, [isLoading]);
-  
-useEffect(()=>{
-  if(animation){
+
+        
+  useEffect(()=>{
+    gsap.registerPlugin(ScrollTrigger);
     headerAnimation();
     letteringHover();
     presentationAnimation();
     skillAnimation();
     projectAnimation();
-  }
-}, [animation])
-
-  if(isLoading){
-    return <Loading />
-  }
+}, [])
 
   return (
   <div className='container' >

@@ -20,7 +20,7 @@ export default function Contact() {
       <div className='send-mail'>
         <div className='line'></div>
         <a className='email bounce' id='joinme' href='mailto:'>
-          contact@virtualgs.net
+          gaetan.santucci@gmail.com
         </a>
       </div>
       <div className='social'>
