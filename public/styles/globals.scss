@@ -36,17 +36,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: vars.$primaryLight;
-    background: vars.$primaryDark;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: vars.$primaryLight;
+    color: white;
     background: vars.$primaryDark;
   }
 }
