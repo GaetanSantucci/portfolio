@@ -8,7 +8,7 @@ export default [
     slug: 'https://rpdata.fr/'
   }, {
     name: 'VirtualGS',
-    slug: 'https://www.virtualgs.net/'
+    slug: 'https://www.virtualgs.fr/'
   }, {
     name: 'WakeUp',
     slug: 'https://www.wakeupclf.fr/'

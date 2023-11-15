@@ -1,0 +1,39 @@
+# version: '3.8'
+
+# services:
+#   app:
+#     build:
+#       context: .
+#       dockerfile: Dockerfile 
+#     container_name: nextjs13-course
+#     ports:
+#       - "3021:3021"
+#     volumes:
+#       - .:/app
+#       - /app/node_modules
+
+# version: '3.8'
+# services:
+#   web:
+#     build:
+#       context: ./
+#       target: runner
+#     volumes:
+#       - .:/app
+#     command: npm start
+#     ports:
+#       - "3000:3000"
+#     environment:
+#       NODE_ENV: production
+
+
+version: "3.8"
+services: 
+  frontend:
+    container_name: frontend
+    build: .
+    restart: always #change if you don't want your container restarting
+    environment:
+      - NODE_ENV=production
+    ports:
+      - 3000:3000
